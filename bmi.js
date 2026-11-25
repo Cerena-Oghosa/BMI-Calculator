@@ -38,7 +38,7 @@ form.addEventListener("submit", function(event){
             showError("Weight and Height must not be less than or zero ")
             return;
         }
-        if(height <= 1){
+        if(height <= 1 || height > 2.5){
             showError("Height must be in meters (e.g 1.75)")
             return;
         }
